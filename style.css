@@ -1,0 +1,224 @@
+/* Domyślny ciemny motyw */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Ciemne tło */
+    color: #e0e0e0; /* Jasny tekst */
+    line-height: 1.6;
+}
+
+    /* Jasny motyw */
+    body.light-theme {
+        background-color: white; /* Jasne tło */
+        color: #333; /* Ciemny tekst */
+    }
+
+        body.light-theme header {
+            background-color: #f4f4f9; /* Jasne tło nagłówka */
+            color: #333; /* Ciemniejszy tekst */
+        }
+
+        body.light-theme nav ul li a {
+            color: #333; /* Ciemniejsze linki */
+        }
+
+        body.light-theme footer {
+            background-color: #f4f4f9; /* Jasne tło stopki */
+            color: #333; /* Ciemniejszy tekst */
+        }
+
+nav ul li a:hover {
+    color: #eaeaea;
+}
+
+body.light-theme nav ul li a:hover {
+    color: black;
+}
+
+/* Stylowanie nagłówka */
+header {
+    background-color: #333; /* Ciemny nagłówek */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    header.light-theme {
+        background-color: white; /* Jasny nagłówek */
+        color: #333; /* Ciemny tekst */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+    #theme-toggle {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(135deg, #3b82f6, #06b6d4); /* Gradient kolorów */
+        border: none;
+        border-radius: 25px; /* Zaokrąglenie rogów */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Cień pod przyciskiem */
+        cursor: pointer;
+        transition: all 0.3s ease; /* Płynne przejście efektów */
+    }
+    
+    /* Efekt najechania na przycisk */
+    #theme-toggle:hover {
+        background: linear-gradient(135deg, #06b6d4, #3b82f6); /* Zmiana kierunku gradientu */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Zwiększenie cienia */
+        transform: translateY(-2px); /* Efekt podniesienia */
+    }
+    
+    /* Dodanie efektu kliknięcia */
+    #theme-toggle:active {
+        transform: translateY(0px); /* Powrót do pozycji */
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Lżejszy cień */
+    }
+
+/* Stylowanie nawigacji */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+        nav ul li a {
+            color: #e0e0e0; /* Jasne linki */
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #b0b0b0; /* Jaśniejszy kolor na hover */
+            }
+
+/* Stylowanie głównej treści strony */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1f1f1f; /* Ciemne tło dla głównej treści */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    main.light-theme {
+        background-color: white;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        color: #e0e0e0; /* Jasny tekst nagłówka */
+        margin-bottom: 20px;
+    }
+
+    main.light-theme h2 {
+        color: #333; /* Ciemny tekst nagłówka w jasnym motywie */
+    }
+
+    main p {
+        font-size: 1rem;
+        color: #b0b0b0; /* Jaśniejszy tekst */
+        line-height: 1.6;
+    }
+
+    main.light-theme p {
+        color: #666; /* Ciemniejszy tekst w jasnym motywie */
+    }
+
+/* Stylowanie listy produktów */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+    ul li {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #555; /* Ciemniejsza ramka */
+        border-radius: 5px;
+        background-color: #2a2a2a; /* Ciemne tło dla elementów listy */
+        transition: background-color 0.3s ease;
+    }
+
+body.light-theme ul li {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+ul li:hover {
+    background-color: #3b3b3b; /* Jaśniejsze tło po najechaniu */
+}
+
+body.light-theme ul li:hover {
+    background-color: #e0e0e0; /* Jaśniejsze tło po najechaniu w jasnym motywie */
+}
+
+ul li strong {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Jasny tekst dla nagłówków listy */
+}
+
+body.light-theme ul li strong {
+    color: #333; /* Ciemny tekst dla nagłówków w jasnym motywie */
+}
+
+ul li p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Jaśniejszy tekst */
+}
+
+body.light-theme ul li p {
+    color: #666; /* Ciemniejszy tekst w jasnym motywie */
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    footer.light-theme {
+        background-color: #f4f4f9; /* Jasna stopka */
+        color: #333; /* Ciemny tekst */
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer.light-theme p {
+        color: #666; /* Ciemniejszy tekst w jasnej stopce */
+    }
+
+/* Animacja pisania */
+.typewrite .wrap {
+    display: inline-block;
+    border-right: 2px solid #e0e0e0; /* Jasny kursor */
+    animation: blink-caret 1s step-end infinite; /* Efekt migania */
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+body.light-theme .typewrite .wrap {
+    color: #333; /* Ciemniejszy tekst w jasnym motywie */
+    border-right: 2px solid #333; /* Ciemny kursor w jasnym motywie */
+}
+
+/* Animacja migania kursora */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
